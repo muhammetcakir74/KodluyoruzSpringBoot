@@ -1,4 +1,4 @@
-package com.muhammetcakir.dto;
+package com.muhammetcakir.business.dto;
 //DTO: Data Transfer Object
 
 import lombok.AllArgsConstructor;
