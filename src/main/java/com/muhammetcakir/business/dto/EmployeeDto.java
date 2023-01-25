@@ -12,7 +12,7 @@ import lombok.extern.log4j.Log4j2;
 @NoArgsConstructor
 @Builder
 @Log4j2
-public class EmployeeEntityDto {
+public class EmployeeDto {
     private Long id;
     private String firstName;
     private String lastName;
