@@ -1,5 +1,6 @@
 package com.muhammetcakir.data.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,10 +13,16 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.util.Date;
 
-@MappedSuperclass
+//lombok
 @Getter
 @Setter
+
+//hibernate jpa
+@MappedSuperclass
+
+//Auiditing
 @EntityListeners(AuditingEntityListener.class)
+@JsonIgnoreProperties(value = {"created_date,update_date"},allowGetters = true)
 public class BaseEntity {
 
     @Id
